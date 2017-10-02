@@ -1,16 +1,11 @@
 import feedparser
-
-class RSSReader:
-    def Read(url):
-        d = feedparser.parse(url)
-        # print(d['channel']['description'])
-        for x in d.entries[0]:
-            print(x.get('title',''))
-            print(x.get('summary',''))
+import FaceBookCollector
+import TwitterCollector
+import RSSCollector
 
 
-
-RSSReader.Read("http://blog.rss.naver.com/uutak2000.xml")
+if __name__ == '__main__':
+    pass
 
 # for x in range(5):
 #     print('*' * (x + 1))
