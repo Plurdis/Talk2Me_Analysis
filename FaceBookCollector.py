@@ -15,13 +15,11 @@ facebook_app_secret = 'c79a4b220896c1d784cecdd92cd8f229'
 
 class FaceBookCollector(BaseCollector.BaseCollector):
 
+
+
+
     def __init__(self):
         pass
-
-    def get_json(self):
-        datas = OrderedDict()
-
-
 
     def get_request_url(self, url):
         req = urllib.request.Request(url)

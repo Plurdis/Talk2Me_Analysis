@@ -31,8 +31,9 @@ class TwitterCollector:
         for tweet in public_tweets:
             print(type(tweet))
             print(tweet.text)
+            # twitter.com/anyuser/status/915715643990790145
+            print(tweet.id_str)
             print(tweet.created_at)
-
 
 if __name__ == '__main__':
     tc = TwitterCollector()

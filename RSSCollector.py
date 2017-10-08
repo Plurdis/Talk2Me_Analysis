@@ -7,7 +7,6 @@ class RSSCollector(BaseCollector.BaseCollector):
         self.url = url
 
     def printTest(self):
-
         feed = feedparser.parse(self.url)
 
         for key in feed['entries']:
